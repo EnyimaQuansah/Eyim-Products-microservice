@@ -13,7 +13,7 @@ const connectRabbitMQ = async () => {
     // Ensure queues exist
     await channel.assertQueue('update_inventory', { durable: true });
     await channel.assertQueue('product_events_for_notifications', { durable: true }); 
-	await channel.assertQueue('product_events', { durable: true }); 
+	  await channel.assertQueue('product_events', { durable: true }); 
 
     return { channel, connection };
   } catch (err) {
