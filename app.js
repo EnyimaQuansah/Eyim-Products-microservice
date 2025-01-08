@@ -25,6 +25,10 @@ app.use('/products', productRoutes);
 app.use('/category', categoryRoutes);
 app.use('/images', imageRouter);
 
+app.get('/activate', (req, res) => {
+  res.status(200).json({ message: 'Products service is active' });
+});
+
 
 // Initialize services and middlewares
 const startServices = async () => {
