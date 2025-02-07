@@ -42,7 +42,7 @@ const startServices = async () => {
     console.log('RabbitMQ connected and inventory updates consumer started.');
 
     // Synchronize MongoDB with Elasticsearch for categories
-    await initializeAndSyncCategories();
+    // await initializeAndSyncCategories();
     console.log('Elasticsearch sync initialized for categories.');
 
     // Ensure Elasticsearch indices exist
